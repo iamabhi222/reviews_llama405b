@@ -67,93 +67,27 @@ _LANG_MAP = {
 }
 
 _EXAMPLE_LANG = {
-    'as': ['''  Input: "The boy goes to school every day to play cricket."
+    'as': ["Input:The boy goes to school every day to play cricket.\nOutput:ছোৱালীয়ে প্ৰতিদিনে schoolলৈ যায় cricket খেলিবলৈ।\nInput:She doesn't like to play football but loves to cheer for her team.\nOutput:তেওঁক football খেলিবলৈ ভাল নালাগে but তেওঁৰ teamক cheer কৰিবলৈ ভাল লাগে।"],
 
-                Output: "ছোৱালীয়ে প্ৰতিদিনে schoolলৈ যায় cricket খেলিবলৈ।"
+    'bn': ["Input:The boy goes to school every day to play cricket.\nOutput:ছেলেটা প্রতিদিন school যায় cricket খেলতে।\nInput:She doesn't like to play football but loves to cheer for her team.\nOutput:তেওঁক football খেলিবলৈ ভাল নালাগে but তেওঁৰ teamক cheer কৰিবলৈ ভাল লাগে।"],
 
-                Input: "She doesn't like to play football but loves to cheer for her team."
+    'hi': ["Input:The boy goes to school every day to play cricket.\nOutput:लड़का हर दिन school जाता है cricket खेलने।, [school, cricket]\nInput:She doesn't like to play football but loves to cheer for her team.\nOutput:उसे football खेलना पसंद नहीं है but अपनी team के लिए cheer करना पसंद है।, [football, team, cheer]"],
 
-                Output: "তেওঁক football খেলিবলৈ ভাল নালাগে but তেওঁৰ teamক cheer কৰিবলৈ ভাল লাগে।"'''],
+    'gu': ["Input:The boy goes to school every day to play cricket.\nOutput:છોકરો દરરોજ school જાય છે cricket રમવા.\nInput:She doesn't like to play football but loves to cheer for her team.\nOutput:તેણે football રમવું ગમતું નથી but તેની teamને cheer કરવું ગમે છે."],
 
-    'bn': ['''  Input: "The boy goes to school every day to play cricket."
+    'ka': ["Input:The boy goes to school every day to play cricket.\nOutput:ಬಾಯ್ ಪ್ರತಿದಿನವೂ school ಗೆ cricket ಆಟವಾಡಲು ಹೋಗುತ್ತಾನೆ.\nInput:She doesn't like to play football but loves to cheer for her team.\nOutput:ಅವಳಿಗೆ football ಆಟವಾಡಲು ಇಷ್ಟವಿಲ್ಲ but ತನ್ನ team ಗೆ cheer ಮಾಡಲು ಇಷ್ಟವಿದೆ."],
 
-                Output: "ছেলেটা প্রতিদিন school যায় cricket খেলতে।"
+    'ml': ["Input:The boy goes to school every day to play cricket.\nOutput:അച്ചന്‍ പ്രതിദിനം school-ലേക്ക് cricket കളിക്കാന്‍ പോകുന്നു.\nInput:She doesn't like to play football but loves to cheer for her team.\nOutput:അവള്‍ക്ക് football കളിക്കാന്‍ ഇഷ്ടമില്ല but അവളുടെ team-നായി cheer ചെയ്യാൻ ഇഷ്ടം."],
 
-                Input: "She doesn't like to play football but loves to cheer for her team."
+    'mr': ["Input:The boy goes to school every day to play cricket.\nOutput:मुलगा रोज school ला cricket खेळण्यासाठी जातो.\nInput:She doesn't like to play football but loves to cheer for her team.\nOutput:तिला football खेळायला आवडत नाही but तिच्या team साठी cheer करायला आवडतं."],
 
-                Output: "তেওঁক football খেলিবলৈ ভাল নালাগে but তেওঁৰ teamক cheer কৰিবলৈ ভাল লাগে।"'''],
+    'or': ["Input:The boy goes to school every day to play cricket.\nOutput:ଲାଡ୍କା ପ୍ରତିଦିନ school କୁ cricket ଖେଳିବାକୁ ଯାଏ।\nInput:She doesn't like to play football but loves to cheer for her team.\nOutput:ତାଙ୍କୁ football ଖେଳିବାକୁ ଭଲ ଲାଗେନାହିଁ but ତାଙ୍କର team ପାଇଁ cheer କରିବାକୁ ଭଲ ଲାଗେ।"],
 
-    'hi': ['''  Input: "The boy goes to school every day to play cricket."
+    'pa': ["Input:The boy goes to school every day to play cricket.\nOutput:ਲੜਕਾ ਹਰ ਰੋਜ਼ school ਜਾਂਦਾ ਹੈ cricket ਖੇਡਣ ਲਈ।\nInput:She doesn't like to play football but loves to cheer for her team.\nOutput:ਉਹਨੂੰ football ਖੇਡਣਾ ਪਸੰਦ ਨਹੀਂ ਹੈ but ਆਪਣੇ team ਲਈ cheer ਕਰਨਾ ਪਸੰਦ ਹੈ।"],
 
-                Output: "लड़का हर दिन school जाता है cricket खेलने।", ["school", "cricket"]
+    'ta': ["Input:The boy goes to school every day to play cricket.\nOutput:The boy தினமும் schoolக்கு போகிறான் cricket விளையாட.\nInput:She doesn't like to play football but loves to cheer for her team.\nOutput:அவளுக்கு football விளையாட விருப்பம் இல்லை but தன் teamக்கு cheer செய்ய விருப்பம்."],
 
-                Input: "She doesn't like to play football but loves to cheer for her team."
-
-                Output: "उसे football खेलना पसंद नहीं है but अपनी team के लिए cheer करना पसंद है।", ["football", "team", "cheer"]'''],
-
-    'gu': ['''  Input: "The boy goes to school every day to play cricket."
-
-                Output: "છોકરો દરરોજ school જાય છે cricket રમવા."
-
-                Input: "She doesn't like to play football but loves to cheer for her team."
-
-                Output: "તેણે football રમવું ગમતું નથી but તેની teamને cheer કરવું ગમે છે."'''],
-
-    'ka': ['''  Input: "The boy goes to school every day to play cricket."
-
-                Output: "ಬಾಯ್ ಪ್ರತಿದಿನವೂ school ಗೆ cricket ಆಟವಾಡಲು ಹೋಗುತ್ತಾನೆ."
-
-                Input: "She doesn't like to play football but loves to cheer for her team."
-
-                Output: "ಅವಳಿಗೆ football ಆಟವಾಡಲು ಇಷ್ಟವಿಲ್ಲ but ತನ್ನ team ಗೆ cheer ಮಾಡಲು ಇಷ್ಟವಿದೆ."'''],
-
-    'ml': ['''  Input: "The boy goes to school every day to play cricket."
-
-                Output: "അച്ചന്‍ പ്രതിദിനം school-ലേക്ക് cricket കളിക്കാന്‍ പോകുന്നു."
-
-                Input: "She doesn't like to play football but loves to cheer for her team."
-
-                Output: "അവള്‍ക്ക് football കളിക്കാന്‍ ഇഷ്ടമില്ല but അവളുടെ team-നായി cheer ചെയ്യാൻ ഇഷ്ടം."'''],
-
-    'mr': ['''  Input: "The boy goes to school every day to play cricket."
-
-                Output: "मुलगा रोज school ला cricket खेळण्यासाठी जातो."
-
-                Input: "She doesn't like to play football but loves to cheer for her team."
-
-                Output: "तिला football खेळायला आवडत नाही but तिच्या team साठी cheer करायला आवडतं."'''],
-
-    'or': ['''  Input: "The boy goes to school every day to play cricket."
-
-                Output: "ଲାଡ୍କା ପ୍ରତିଦିନ school କୁ cricket ଖେଳିବାକୁ ଯାଏ।"
-
-                Input: "She doesn't like to play football but loves to cheer for her team."
-
-                Output: "ତାଙ୍କୁ football ଖେଳିବାକୁ ଭଲ ଲାଗେନାହିଁ but ତାଙ୍କର team ପାଇଁ cheer କରିବାକୁ ଭଲ ଲାଗେ।"'''],
-
-    'pa': ['''  Input: "The boy goes to school every day to play cricket."
-
-                Output: "ਲੜਕਾ ਹਰ ਰੋਜ਼ school ਜਾਂਦਾ ਹੈ cricket ਖੇਡਣ ਲਈ।"
-
-                Input: "She doesn't like to play football but loves to cheer for her team."
-
-                Output: "ਉਹਨੂੰ football ਖੇਡਣਾ ਪਸੰਦ ਨਹੀਂ ਹੈ but ਆਪਣੇ team ਲਈ cheer ਕਰਨਾ ਪਸੰਦ ਹੈ।"'''],
-
-    'ta': ['''  Input: "The boy goes to school every day to play cricket."
-
-                Output: "The boy தினமும் schoolக்கு போகிறான் cricket விளையாட."
-
-                Input: "She doesn't like to play football but loves to cheer for her team."
-
-                Output: "அவளுக்கு football விளையாட விருப்பம் இல்லை but தன் teamக்கு cheer செய்ய விருப்பம்."'''],
-
-    'te': ['''  Input: "The boy goes to school every day to play cricket."
-
-                Output: "Tఅబ్బాయ్ ప్రతి రోజు schoolకి cricket ఆడటానికి వెళ్ళిపోతాడు."
-
-                Input: "She doesn't like to play football but loves to cheer for her team."
-
-                Output: "ఆమెకు football ఆడటం ఇష్టం లేదు but తన team కోసం cheer చేయడం ఇష్టం."'''],
+    'te': ["Input:The boy goes to school every day to play cricket.\nOutput:అబ్బాయ్ ప్రతి రోజు schoolకి cricket ఆడటానికి వెళ్ళిపోతాడు.\nInput:She doesn't like to play football but loves to cheer for her team.\nOutput:ఆమెకు football ఆడటం ఇష్టం లేదు but తన team కోసం cheer చేయడం ఇష్టం."],
 }
 
 for code, language in _LANG_MAP.items():
@@ -189,42 +123,26 @@ for code, language in _LANG_MAP.items():
             parser = JsonOutputParser(pydantic_object=StructOBJ)
 
             # Create prompt with the en_list
-            prompt = f'''
-                Hi,
+            prompt = f"""
+Task: Translate Sentences
 
-                You are a translator tasked with the following:\n
+Target Language: {language}
+Words to Preserve in English: {", ".join(en_list)}
+List of Sentences to Translate:
 
-                Task: Translate Sentences\n
+{"\n".join([f"{i+1}. {batch}" for i, batch in enumerate(batch)])}
 
-                You will receive a list of sentences in English. Your goal is to translate these sentences into a blend of {language} and English, using a colloquial or code-mix style.\n
+Instructions:
+Translate the sentences into a mixture of {language} and English, using a colloquial or code-mix style.
+Keep the words "{", ".join(en_list)}" in English.
+Use {language} script for {language} words and English script for English words.
 
-                Instructions:\n
+Examples:
+{_EXAMPLE_LANG[code]}
 
-                Translation Style:\n
-
-                Translate the sentences into a mixture of {language} and English.\n
-                Use common expressions and terms that people might use in casual conversation.\n
-                
-                Preserve Specific Words:\n
-
-                Some words from the list below should remain in English in the translation.\n
-                You may also keep additional words in English if it feels natural in the context, also let me know the extra words which you kept in English\n
-                Words to Preserve: {en_list}
-
-                \nFormatting:\n
-
-                English words in the translated sentences should be written in English script.\n
-                Only {language} words should be in {language} script.\n
-                Example:\n
-
-                {_EXAMPLE_LANG[code]}
-
-                \nPlease ensure that the translated sentences retain their original meaning while incorporating the provided words in English.\n
-
-                Here are the list of sentences:\n{batch} \n
-
-                {parser.get_format_instructions()}
-            '''
+Parser Instruction:
+{parser.get_format_instructions()}
+"""
 
             # print(prompt)
 
